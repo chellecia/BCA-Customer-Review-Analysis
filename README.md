@@ -13,6 +13,6 @@ Key features:
 
 - Data visualization to highlight trends and insights
 
--Classification performance evaluation (accuracy, precision, recall)
+- Classification performance evaluation (accuracy, precision, recall)
 
 Tools: Python, HuggingFace Transformers, Pandas, Scikit-learn, Matplotlib, Seaborn
