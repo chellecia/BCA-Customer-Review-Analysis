@@ -61,13 +61,14 @@ This project performs sentiment analysis on customer reviews related to **Bank B
 ---
 
 ### 6. Deployment
-**Login Page**
-![https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Login%20Page.png)
 
- **Sentimen Page** 
-![https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Sentiment%20Page.png)
+**Login Page**  
+![Login Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Login%20Page.png)
 
-**Result Page**
-![https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Hasil%20Sentiment.png)
+**Sentimen Page**  
+![Sentimen Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Sentiment%20Page.png)
+
+**Result Page**  
+![Result Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Hasil%20Sentiment.png)
 
  
