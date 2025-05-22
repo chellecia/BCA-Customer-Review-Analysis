@@ -1,16 +1,65 @@
-# Sentiment Analysis on Bank BCA Customer Reviews
+# 💬 Sentiment Analysis on Bank BCA Customer Reviews
 
-This project performs sentiment analysis on customer reviews related to Bank BCA using Natural Language Processing (NLP) techniques. The goal is to uncover customer perceptions, identify common sentiments, and provide insights for improving banking services.
+This project performs sentiment analysis on customer reviews related to **Bank BCA** using **Natural Language Processing (NLP)** techniques. The goal is to uncover customer perceptions, identify common sentiments, and provide actionable insights to help improve banking services.
 
-Key features:
+---
 
-- Preprocessing and cleaning of unstructured review text
+## ✨ Key Features
 
-- Sentiment classification using a pretrained transformer model (HuggingFace)
+- ✅ Preprocessing and cleaning of unstructured review text  
+- 🤖 Sentiment classification using a pretrained **BERT** model from Hugging Face  
+- 📊 Data visualization to highlight trends and insights  
+- 📈 Evaluation using **accuracy**, **precision**, **recall**, and **F1-score**  
+- 🚀 End-to-end pipeline from data cleaning to model deployment
 
-- Data visualization to highlight trends and insights
+---
 
-- Classification performance evaluation (accuracy, precision, recall)
+## 📂 Project Workflow  
+![Workflow](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/FLowchart.png)
 
-Tools: Python, HuggingFace Transformers, Pandas, Scikit-learn, Matplotlib, Seaborn
+---
 
+### 1. Data Loading & Preprocessing
+- Load review dataset
+- Clean and normalize text:
+  - Lowercasing, punctuation removal
+  - Stemming using **Sastrawi**
+  - Stopword removal (custom + NLTK)
+- Label mapping: assign sentiment classes (e.g., positive, neutral, negative)
+- Split data into **training, validation, and test sets** (80:10:10)
+
+---
+
+### 2. Exploratory Data Analysis (EDA)
+- Visualize distribution of sentiments and review lengths  
+- Generate word clouds to identify dominant words  
+  ![Word Cloud](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/word%20cloud%20BCA.png)
+
+---
+
+### 3. Tokenization
+- Tokenize text using **`BERT tokenizer`** from Hugging Face Transformers  
+- Pad and truncate sequences to match model input size  
+
+---
+
+### 4. Model Building
+- Fine-tune **`BertForSequenceClassification`** for sentiment classification  
+- Define training pipeline using `Trainer` and `TrainingArguments`
+
+---
+
+### 5. Model Training & Evaluation
+- Train model with training and validation sets  
+- Evaluate model using:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score  
+  ![Classification Report](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Classification%20report.png)
+
+---
+
+### 6. Deployment
+- Convert model for future deployment
+- Structure code for reproducibility and reuse
