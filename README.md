@@ -1,66 +1,31 @@
 # 💬 Sentiment Analysis on Bank BCA Customer Reviews
 
-This project performs sentiment analysis on customer reviews related to **Bank BCA** using **Natural Language Processing (NLP)** techniques. The goal is to uncover customer perceptions, identify common sentiments, and provide actionable insights to help improve banking services.
+This project performs **sentiment analysis** on customer reviews related to **Bank BCA** using advanced **Natural Language Processing (NLP)** techniques. The goal is to uncover customer perceptions, identify common sentiments, and provide actionable insights to help improve banking services.
 
 ---
 
 ## ✨ Key Features
 
-- ✅ Preprocessing and cleaning of unstructured review text  
-- 🤖 Sentiment classification using a pretrained **BERT** model from Hugging Face  
-- 📊 Data visualization to highlight trends and insights  
-- 📈 Evaluation using **accuracy**, **precision**, **recall**, and **F1-score**  
-- 🚀 End-to-end pipeline from data cleaning to model deployment
+### 📝 Text Preprocessing
+- Lowercasing and punctuation removal  
+- **Stemming** with [Sastrawi](https://github.com/sastrawi/sastrawi) (Indonesian stemmer)  
+- Custom stopword removal (NLTK + additional list)
 
----
+### 🤖 Fine-Tuned BERT Model
+- Pretrained **IndoBERT** model from [Hugging Face Transformers](https://huggingface.co/)  
+- Fine-tuned specifically for **Indonesian** customer reviews  
+- Powered by `BertForSequenceClassification`
 
-## 📂 Project Workflow  
-![Workflow](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/FLowchart.png)
+### 📊 Data Visualization
+- Sentiment distribution charts  
+- Word clouds to highlight frequently used terms
 
----
+### 📈 Performance Metrics
+- **Accuracy**: 92%  
+- **Weighted F1-score**: 0.92  
+- Also includes **precision** and **recall** for each class
 
-### 1. Data Loading & Preprocessing
-- Load review dataset
-- Clean and normalize text:
-  - Lowercasing, punctuation removal
-  - Stemming using **Sastrawi**
-  - Stopword removal (custom + NLTK)
-- Label mapping: assign sentiment classes (e.g., positive, neutral, negative)
-- Split data into **training, validation, and test sets** (80:10:10)
-
----
-
-### 2. Exploratory Data Analysis (EDA)
-- Visualize distribution of sentiments and review lengths  
-- Generate word clouds to identify dominant words  
-  ![Word Cloud](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/word%20cloud%20BCA.png)
-
----
-
-### 3. Tokenization
-- Tokenize text using **`BERT tokenizer`** from Hugging Face Transformers  
-- Pad and truncate sequences to match model input size  
-
----
-
-### 4. Model Building
-- Fine-tune **`BertForSequenceClassification`** for sentiment classification  
-- Define training pipeline using `Trainer` and `TrainingArguments`
-
----
-
-### 5. Model Training & Evaluation
-- Train model with training and validation sets  
-- Evaluate model using:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-score  
-  ![Classification Report](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Classification%20report.png)
-
----
-
-### 6. Deployment
+### Deployment
 
 **Login Page**  
 ![Login Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Login%20Page.png)
@@ -70,5 +35,24 @@ This project performs sentiment analysis on customer reviews related to **Bank B
 
 **Result Page**  
 ![Result Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Hasil%20Sentiment.png)
+
+
+### 🚀 End-to-End Pipeline
+From raw reviews to a deployed system:
+- Preprocessing → EDA → Tokenization → Model Training → Evaluation → Deployment
+
+---
+
+## 📂 Project Workflow  
+```mermaid
+graph TD
+    A[Raw Reviews] --> B[Text Cleaning]
+    B --> C[EDA & Visualization]
+    C --> D[Tokenization]
+    D --> E[Model Training]
+    E --> F[Evaluation]
+    F --> G[Deployment]
+
+
 
  
