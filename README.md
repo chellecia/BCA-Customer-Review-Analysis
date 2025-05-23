@@ -30,7 +30,7 @@ This project performs **sentiment analysis** on customer reviews related to **Ba
 **Login Page**  
 ![Login Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Login%20Page.png)
 
-**Sentimen Page**  
+**Sentimen Page (Home Page)**  
 ![Sentimen Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Sentiment%20Page.png)
 
 **Result Page**  
