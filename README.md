@@ -6,26 +6,26 @@ This project performs **sentiment analysis** on customer reviews related to **Ba
 
 ## ✨ Key Features
 
-### 📝 Text Preprocessing
+#### 📝 Text Preprocessing
 - Lowercasing and punctuation removal  
 - **Stemming** with [Sastrawi](https://github.com/sastrawi/sastrawi) (Indonesian stemmer)  
 - Custom stopword removal (NLTK + additional list)
 
-### 🤖 Fine-Tuned BERT Model
+####  🤖 Fine-Tuned BERT Model
 - Pretrained **IndoBERT** model from [Hugging Face Transformers](https://huggingface.co/)  
 - Fine-tuned specifically for **Indonesian** customer reviews  
 - Powered by `BertForSequenceClassification`
 
-### 📊 Data Visualization
+####  📊 Data Visualization
 - Sentiment distribution charts  
 - Word clouds to highlight frequently used terms
 
-### 📈 Performance Metrics
+####  📈 Performance Metrics
 - **Accuracy**: 92%  
 - **Weighted F1-score**: 0.92  
 - Also includes **precision** and **recall** for each class
 
-### Deployment
+####  Deployment
 
 **Login Page**  
 ![Login Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Login%20Page.png)
@@ -37,7 +37,7 @@ This project performs **sentiment analysis** on customer reviews related to **Ba
 ![Result Page](https://github.com/chellecia/BCA-Customer-Review-Analysis/blob/main/Hasil%20Sentiment.png)
 
 
-### 🚀 End-to-End Pipeline
+####  🚀 End-to-End Pipeline
 From raw reviews to a deployed system:
 - Preprocessing → EDA → Tokenization → Model Training → Evaluation → Deployment
 
